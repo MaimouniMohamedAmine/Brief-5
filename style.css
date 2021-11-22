@@ -1,0 +1,25 @@
+*{
+    background-color: rgba(0, 0, 0, 0.171);
+    margin: 0%;
+    padding: 0%;
+}
+                /* Navbar */
+nav{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+nav .logo{
+    width: 64%;
+}
+nav button{
+    margin: 17% 0% 0% 0%;
+    padding: 7% 30%;
+    text-align: left;
+}
+nav h2{
+    margin: 25%  0% 0% 60%;
+}
+nav i{
+    margin: 0%  0% 0% 0%;
+    color: ;
+}
