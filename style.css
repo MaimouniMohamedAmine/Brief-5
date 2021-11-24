@@ -3,7 +3,6 @@
     padding:0 ;
     box-sizing: border-box;
     text-decoration: none;
-    list-style: none;
     font-family:'poppins', sans-serif;
 }
 body{
@@ -55,6 +54,30 @@ nav ul li a{
   #check{
     display: none;
 }
+.quad{
+      display: grid;
+      grid-template-columns: auto auto;
+      grid-gap: 20px ;
+    }
+.quad, .a{
+  padding: 3% 13% 10%;
+  margin: 0% 7% 0% 0%;
+}  
+.quad h1{
+  margin: 2% 0% 8% 0%;
+}  
+.contenu-projet .cp-title{
+  padding: 2% 0% 2% 5%;
+  text-align: center;
+}
+.contenu-projet #cp-p{
+  padding: 2% 0% 2% 5%;
+  text-align: center;
+}
+.contenu-projet ol li{
+  padding: 0% 18%;
+  text-align: left;
+}
 @media (max-width: 1000px)
 {
     label.logo{
@@ -64,6 +87,7 @@ nav ul li a{
     nav ul li a{
       font-size: 16px;
     }
+    
   }
     /*Mobile navbar*/
     @media (max-width: 858px){
