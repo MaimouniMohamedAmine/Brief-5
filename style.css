@@ -1,83 +1,80 @@
 *{
     margin: 0; 
     padding:0 ;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
     box-sizing: border-box;
     text-decoration: none;
+    list-style: none;
     font-family:'poppins', sans-serif;
 }
 body{
     background-color:#F2F2F6;
     
-}
-            /* Navbar */
-
-nav{
-    display: grid;
-    grid-template-columns: auto auto auto;
-}
-nav .logo{
-    width: 64%;
-}
-nav ul{
-    float: right;
-   margin-right: 40%;
+}/* Navbar */
+.logo img{
+  width: 300px;
+  margin-left: 6%;
 }
 
+#sideNav{
+  width:250px;
+  height:100vh;
+  position:fixed;
+  right: -250px;
+  top:0;
+  padding-top: 40px;
+  background-color: #504DC1;
+  z-index:2;
+  transition: 0.5s;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 700;
+
+}
 nav ul li{
-display: table-row;
-line-height: 80px;
-margin: 0 5px;
+  list-style:none;
+  margin: 50px 20px;
 }
 nav ul li a{
-    margin: 22% 0% 0% 120%;
-    color: #504dc1;
-    font-weight: lighter;
-    font-size: 30px;
-    text-shadow: 2px 0px 0px #ffd007;
-    border-radius: 3px;
-    text-transform:uppercase;
-    text-decoration: none;
+  text-decoration:none;
+  color: #fdd007;
+
 }
- a:hover{
-    background: #B5AED0;
-    transition: .5s;
+nav ul li a:hover{
+  text-decoration:none;
+  color:#5751FC;
+  text-shadow:2px 0px 0px #0000006c;
+  transition: .8s;
+  background-color: #C9B34D;
+  padding: 10% 10% 10% 10%;
+border-radius: 8px;
 }
-.checkbtn{
-    font-size: 30px;
-    color: white;
-    float: right;
-    line-height: 80px;
-    margin-right: 40px;
-    cursor: pointer;
-    display: none;
-  }
-  #check{
-    display: none;
+#menuBtn{
+  margin: 15px 0% 0% 9% ;
+  fill: #fdd007;
+  width: 50px;
+  height:50px;
+  text-align:center;
+  position:fixed;
+  right:30px;
+  top:30px;
+  border-radius: 3px;
+  background-color:#504DC1;
+  border-radius: 10px;
+  Z-index:3;
+  cursor:pointer;
+  box-shadow:0px 8px 2px #C9B34D;
+ }
+#menuBtn img{
+  width:20px;
+  margin-top:15px;
 }
-.quad{
-      display: grid;
-      grid-template-columns: auto auto;
-      grid-gap: 20px ;
-    }
-.quad, .a{
-  padding: 3% 13% 10%;
-  margin: 0% 7% 0% 0%;
-}  
-.quad h1{
-  margin: 2% 0% 8% 0%;
-}  
-.contenu-projet .cp-title{
-  padding: 2% 0% 2% 5%;
-  text-align: center;
-}
-.contenu-projet #cp-p{
-  padding: 2% 0% 2% 5%;
-  text-align: center;
-}
-.contenu-projet ol li{
-  padding: 0% 18%;
-  text-align: left;
-}
+
+
+
+
 @media (max-width: 1000px)
 {
     label.logo{
@@ -87,39 +84,14 @@ nav ul li a{
     nav ul li a{
       font-size: 16px;
     }
-    
   }
+
+
+
+
     /*Mobile navbar*/
-    @media (max-width: 858px){
-    
-        .checkbtn{
-          display: block;
-        }
-        ul{
-          position: sticky;
-          width: 100%;
-          height: 100vh;
-          background: #2c3e50;
-          top: 80px;
-          left:0%;
-          text-align: center;
-          transition: all .5s;
-        }
-        nav ul li{
-          display: block;
-         
-        }
-        nav ul li a{
-          font-size: 20px;
-        }
-        a:hover,a.active{
-          background: none;
-          color: #0082e6;
-        }
-        #check:checked ~ ul{
-          left: 0;
-        }
-    }    
+   
+  
  
                         /* head-photo */
 
@@ -128,49 +100,239 @@ nav ul li a{
      width: 100%;
      height: 800px;
  }    
-
+                        /* slogan */
 #slogan{
     text-align: center;
+    color: #5751FC;
+   margin-top: 60px;
+   margin-left: 10px;
+   background: rgba(255, 208, 7, 0.3);
+   border: 5px solid #5751FC;
+   box-sizing: border-box;
+   border-radius: 10px;
+
+   font-family: Oswald;
+   font-style: normal;
+   font-weight: bold;
+   font-size: 33px;
+   line-height: 50px;
+   text-align: center;
+   letter-spacing: 0.05em;
 }
 
                     /*-----Contenu grid-------*/
  .contenu{
      display: grid;
      grid-template-columns: auto auto auto;
-     margin: 20% 0% 0% 15%;
-     
- }
+     margin: 15% 0% 10% 9%;
+     }
  .contenu img{
-     max-width: 50%;
+     width: 80%;
+     height: 80%;
 
- }
+     
+      }
   .contenu h1{
-     text-align: center;
-     margin: 0 50% 10% 0;
+font-size: 35px;
+text-align: center;
+margin-right: 18%;
+margin-bottom: 8%;
+letter-spacing: 0.05em;
+text-transform: uppercase;
+color: #FFD007;
+text-shadow: 4px 0px 0px #5751FC;
+
  } 
-
+ 
+ 
+                   /* five-point */
  #five-point{
-     text-align: center;
+  font-size: 40px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #FFD007;
+  text-shadow: 4px 0px 0px #5751FC;
+  margin-bottom: 10%;
+  
  }
- .icons{
-    display: grid;
-    grid-template-columns: auto auto auto auto auto;
-    grid-gap: 20%;
-    max-width: 80%;
-    margin: 0% 0% 0% 6%;
-    
-}
-#truck{
-    /* Vector */
-transform: matrix(-1, 0, 0, 1, 0, 0);
 
-}
-.phrases{
-    display: grid;
-    grid-template-columns: auto auto auto auto auto;
-}
 
+ 
+
+ .icons {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  grid-gap: 8%;
+  margin-left: 6%;
+  MARGIN-RIGHT: 6%;
+}
+.icons i {
+  font-size:230%;
+  margin-left: 34%;
+  color: #5751FC;
+}
+.icons h2 {
+  font-size: 27px;
+  line-height: 40px;
+  font-weight: bold;
+  padding: 20% 0% 39% 0%;
+  text-align: center;
+  color: #5751FC;
+}
+                   /* Vector */
+ #truck{
+   transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+                        /* fondateur */
 #fondateur{
-    text-align: center;   
+  font-size: 40px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #FFD007;
+  text-shadow: 4px 0px 0px #5751FC;
+  margin-bottom: 8%;
+  margin-top: 6%; 
 }
 
+.raafat img {
+  display: block;
+  margin:   0%  auto 10%  auto ;
+  max-width: 70%;
+}
+            /* contenu-projet */
+
+.contenu-projet img{
+  width: 100%;
+}
+.contenu-projet{
+ color: #5751FC; 
+}
+.quad{
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 20px ;
+  ;
+}
+.a p {
+  padding: 3% 7% 3% 9%;
+  margin: 0% 15% 0% 15%;  
+}   
+.quad h1{
+margin: 9% 10% 5% 24%;
+color: rgba(36, 26, 203, 0.56);
+}  
+.contenu-projet .cp-title{
+padding: 2% 0% 2% 5%;
+text-align: center;
+color: rgba(36, 26, 203, 0.56);
+}
+.contenu-projet #cp-p {
+  padding: 3% 29% 4% 30%;
+  text-align: center;
+  font-size: 19PX;
+  color: rgba(36, 26, 203, 0.56);
+}
+.contenu-projet ol li{
+padding: 0% 18%;
+text-align: left;
+}
+@media (max-width: 858px){
+  .quad{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+  }
+}
+
+                /* contenu-equipe */
+
+ .head-equipe #principal{
+  width: 100%;
+ }    
+ .head-equipe p{
+  margin: 8% 4% 0% 4%;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 50px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #5751FC;
+ }     
+ 
+ .contenu-equipe{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  margin: 15% 0% 10% 12%;
+  }
+  .contenu-equipe img{
+    width: 60%;
+    height: 65%;
+    margin-bottom: 10%;
+     }
+     
+     .contenu-equipe h3{
+      font-size: 25px;
+      text-align: center;
+      margin-right: 38%;
+      margin-bottom: 8%;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: #5751FC;
+      
+       }
+       .contenu-equipe h4{
+        color: rgba(87, 81, 252, 0.7);
+        text-align: center;
+        margin-right: 41%;
+        margin-bottom: 8%;
+    
+        text-transform: uppercase;
+       }
+
+
+                /* contenu-litineraire */
+.contenu-litineraire #child{
+  width: 100%;
+  
+}
+.contenu-litineraire h1{
+  margin: 10% 20% 10% 20%;
+font-weight: bold;
+font-size: 50px;
+line-height: 80px;
+text-align: center;
+letter-spacing: 0.05em;
+color: rgba(36, 26, 203, 0.56);
+}
+.contenu-litineraire #map-final{
+  display: block;
+  margin:   0%  auto 10%  auto ;
+  max-width: 70%;
+}
+
+
+                    /* cantact */
+ 
+.form input,textarea,label{
+  border: 1px solid #000000;
+  width: 1000px;
+  padding: 12px;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}                
+
+.in{
+  background: rgba(122, 119, 214, 0.08);
+  
+}
+
+.sms{
+  background: rgba(122, 119, 214, 0.08);
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
