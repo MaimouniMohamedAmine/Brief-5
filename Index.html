@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -12,17 +13,19 @@
 </head>
 <body>
                      <!-------- Navbar-------->
-
+    <a id="logo">
     <div class="logo">
-        <img src="IMG\SOLIVANE-side.png" alt="">
+    </a>    
+        <img src="IMG\SOLIVANE-side.png" >
     </div>                 
     <div id="sideNav">
         <nav>
             <ul>
-                <li class="h"><a href="index.html">Le Projet</a></li>
-                <li class="h"><a href="#">L'Équipe</a></li>
-                <li class="h"><a href="index3.html">L'Iténeraire</a></li>
-                <li class="h"><a href="#contact">Contact</a></li>
+                <li class="h"><a href="#logo">ACCUEIL</a></li>
+                <li class="h"><a href="#contenu-projet-img">Le Projet</a></li>
+                <li class="h"><a href="#contenu-equipe-img">L'Équipe</a></li>
+                <li class="h"><a href="#contenu-litineraire-img">L'Iténeraire</a></li>
+                <li class="h"><a href="#contact-img">Contact</a></li>
  
             </ul>
         </nav>
@@ -36,7 +39,7 @@
     <div>
                        <!-- head-photo  -->
 
-   <img src="IMG\head-pic.png" id="head-photo">
+   <img src="IMG\caravane-solivane.png" id="head-photo">
    
 
                  <!-- slogan -->
@@ -47,16 +50,22 @@
      <div class="contenu">
          <div class="PROJET">
              <h1>LE PROJET</h1>
+             <a href="#contenu-projet-img">
              <img src="IMG\PROJET.png" >
+            </a>
          </div>
 
          <div CLASS="EQUIPE">
-             <h1>L'EQUIPE</h1>
+             <h1>L'ÉQUIPE</h1>
+             <a href="#contenu-equipe-img">
              <img src="IMG\EQUIPE.png" >
+             </a>
         </div>
         <div class="ITINERAIRE">
-            <h1>L'ITINERAIRE</h1>
+            <h1>L'ITINÉRAIRE</h1>
+            <a href="#contenu-litineraire-img">
             <img src="IMG\ITINERAIRE.png" >
+            </a>
         </div>
 
      </div>
@@ -101,14 +110,21 @@
          <h1 id="fondateur">LE MOT DES FONDATEURS</h1>
 
          <div class="raafat">
-             <img src="IMG\FONDATEURS.png" >
-         </div>
+             <div id="mobile">
+             <img  src="IMG/mobile.png">
+             </div>
+             <div id="desktop">
+             <img  src="IMG\FONDATEURS.png" >
+            </div>
+        </div>
 
-                             <!-- contenu-projet -->
-                <div class="contenu-projet">
-               
-                <img src="IMG\PRESENTATION-PROJET.png" >
-                             
+                                                 <!-- contenu-projet -->
+
+                 <a id="contenu-projet-img"> <div class="contenu-projet-img" > </a> 
+                <h1>Présentation du projet</h1>
+                </div>
+
+                <div class="contenu-projet">              
                 <div>
                       <h1 class="cp-title">TOUR DU MONDE SOLIDAIRE D'UN MÉDECIN GÉNÉRALISTE</h1>
                      <p id="cp-p">La caravane médicale est une association à but non lucratif.Elle a pour principal objectif de favoriser l’accès aux soins des populations exclues des systèmes de santé de leurs pays respectifs.</p>
@@ -118,7 +134,7 @@
                  <ol>
                       <li>1) Au minimum, un médecin généraliste propose ses soins gratuits aux populations exclues du système de santé de leur paysm</li>
                       <li>2) Au mieux, la caravane médicale se joint à d’autres associations locales afin d’être encore plus efficace dans ses soins. La caravane reste alors plusieurs mois dans cette même association avant de repartir.r</li>
-                      <li>3) Entre deux, d’autres médecins de spécialités différentes se joignent à la caravane médicale afin de proposer certains soins plus spécifioues.</li>
+                      <li>3) Entre deux, d’autres médecins de spécialités différentes se joignent à la caravane médicale afin de proposer certains soins plus spécifiques.</li>
                  </ol>
                  </div>
                                                                <!-------Quadruple section------ -->
@@ -146,11 +162,13 @@
 
 
                                              <!-- contenu-equipe -->
-         <div class="head-equipe">   
-              <img src="IMG\l'equipe.png"  id="principal">
-              <p> Une équipe de jeunes oui s'est portée volontaire dans cette mission humanitaire, afin de rapprocher la médecine aux femmes enceintes au village</p>
+                <a id="contenu-equipe-img"><div class="contenu-equipe-img" ></a>
+            <h1> L’EQUIPE  </h1>
          </div>   
-         <div class="contenu-equipe">
+
+         <p id="head-equipe-p"> "Une équipe de jeunes oui s'est portée volontaire dans cette mission humanitaire, afin de rapprocher la médecine aux femmes enceintes au village"</p>
+        
+         <div class="contenu-equipe-grid">
                 <div class="Dr.Ghita">
                     <img src="IMG\Dr.ghita.png" >
                     <h3>Dr.Ghita Berrada</h3>
@@ -159,7 +177,7 @@
        
                 <div CLASS="Dr.Aourfat">
                     <img src="IMG\dr.aourfat.png" >
-                    <h3>Dr. Aourfat Mohamed</h3>
+                    <h3>Dr. Aourfat Reda</h3>
                     <h4>Spécialiste en Gynécologie </h4>
                </div>
 
@@ -173,15 +191,23 @@
         
             </div>
                                                   <!-- contenu-litineraire -->
+    <a id="contenu-litineraire-img"><div class="contenu-litineraire-img" ></a>                    
+                    <h1>iteneraire / Géolocalisation</h1>
+                </div>
                 <div class="contenu-litineraire">
-                     <img src="IMG\IT.jpg" id="child">
-                     <h1>DÉCOUVREZ NOTRE PÉRIPLE PRÉVU A TRAVERS LE MONDE !</h1>
+                     <h1>DÉCOUVREZ NOTRE PÉRIPLE PRÉVU A TRAVERS LE MAROC !</h1>
                      <img src="IMG\map 1.png" id="map-final">
                   </div>
-                                                <!-- cantact -->
-                  <div class="form">
-                     <img src="IMG\contact.png" >
+                                                <!-- contact -->
+                  
+                         <a id="contact-img"> 
+                               <div class="contact-img" >
+                               <h1>CONTACT</h1>
+                            </div>
+                        </a>
 
+
+                     
                         <form class="form-label">  
                                 <label for="fname">Votre nom (obligatoire) </label>
                                 <input type="text" class="in" >
@@ -190,22 +216,25 @@
                                 <label for="fname">Sujet de votre question</label>
                                 <input type="text" class="in">
                                 <label for="fname">Votre message</label>
-                                <textarea type="text" class="sms"></textarea>
-                                <input type="button" value="envoyer">
+                                <textarea type="text"></textarea>
+                                <input type="button"  value="ENVOYER" id="btn">
                         </form>
-                    </div>
+                
+
+                    
 
                                                  <!-- sponsor -->
                     
-                    <div class="sponsor">
-                        <h1>NOS SPONSORS</h1>
-                        <div>
+                    
+                        <h1 id="spn">NOTRE SPONSOR</h1>
+
+                        <div id="mds">
                             <img src="IMG\MDS.png">
                         </div>
-                    </div> 
+    
                                                      <!-- footer  -->
                    <footer>
-                    SOLIVANE© Copyright
+                    <h3>SOLIVANE© Copyright</h3>
                    </footer> 
                    
     <script src="main.js"></script>             
